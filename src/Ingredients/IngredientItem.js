@@ -1,4 +1,4 @@
-import React, {Component, useEffect, useState} from 'react'
+import React, {Component} from 'react'
 import axios from '../custom-axios/axios'
 import PizzaByIngrList from "../Pizza/PizzaByIngrList";
 
@@ -31,29 +31,33 @@ class IngredientItem extends Component {
     }
 
     render() {
-        let spcy= String(this.state.ing.spicy);
-        let veg= String(this.state.ing.veggie);
-        return (
+        let spcy = String(this.state.ing.spicy);
+        let veg = String(this.state.ing.veggie);
+        let spictStyle = "";
+        let veggieSyle = "";
+        if (this.state.ing.veggie)
+            veggieSyle = "list-group-item list-group-item-success";
 
-            <div>
-                <h1>
-                    NAME: {this.state.ing.name}
-                </h1>
-                <h2>
-                    SPICY: {spcy}
-                </h2>
-                <h2>
-                    AMOUNT: {this.state.ing.amount}
-                </h2>
-                <h2>
-                    VEGGIE: {veg}
-                </h2>
+        if (this.state.ing.spicy)
+            spictStyle = "list-group-item list-group-item-danger";
+
+
+        return (
+            <div className="card space-top1" style={{width: "40rem"}}>
+                <ul className="list-group list-group-flush">
+                    <li className={`list-group-item`}>NAME: <strong>{this.state.ing.name}</strong></li>
+                    <li className={`list-group-item ${spictStyle}`}>SPICY: <strong>{spcy}</strong></li>
+                    <li className="list-group-item">AMOUNT: <strong>{this.state.ing.amount}</strong></li>
+                    <li className={`list-group-item ${veggieSyle}`}>VEGGIE: <strong>{veg}</strong></li>
+                </ul>
                 <PizzaByIngrList pizzas={this.state.piz}/>
             </div>
+
         );
     }
 
 }
+
 /*
 const IngredientItem = (props) => {
 

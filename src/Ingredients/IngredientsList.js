@@ -6,17 +6,19 @@ const getIngredients = (props) => {
 
     const deleteIngr= (ingr) => {
         props.onDelete(ingr);
-        props.onPageClick();
     }
     const ingredients = props.ingredients.map((ingredient) => {
-
+        if (ingredient === undefined)
+            return(
+                <h1>NEMA INGREDIENTS</h1>
+            )
 
         return (
             <tr>
                 <td scope="col">{ingredient.name}</td>
                 <td scope="col">{ingredient.amount}</td>
-                <td scope="col">{ingredient.spicy}</td>
-                <td scope="col">{ingredient.veggie}</td>
+                <td scope="col">{ingredient.spicy.toString()}</td>
+                <td scope="col">{ingredient.veggie.toString()}</td>
                 <td scope="col">
                     <Link to={"/ingredients/"+ingredient.name+"/edit"}>
                     <button  className="btn btn-sm btn-secondary">
@@ -34,9 +36,9 @@ const getIngredients = (props) => {
                         </button>
                     </Link>
 
-
                 </td>
             </tr>
+
         );
     });
 
@@ -46,9 +48,8 @@ const getIngredients = (props) => {
 
     // classname="row"
     return (
-        <div className={styles.newLine}>
-            {ingredients}
-        </div>
+            ingredients
+
 
     )
 }

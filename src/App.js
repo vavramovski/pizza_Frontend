@@ -36,7 +36,7 @@ class App extends Component {
                 });
             else
                 this.setState({
-                    ingredients: [{name: "NEMA INGREDIENTS"}]
+                    ingredients: []
                 })
         })
     };
