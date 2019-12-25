@@ -4,7 +4,7 @@
     <list default="true" id="88b9d8ec-c961-4f7e-a8aa-4fce5e084830" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ingredients/IngredientsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ingredients/IngredientsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pizza/pizza.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pizza/pizza.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Table/Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table/Table.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+            <state relative-caret-position="376">
+              <caret line="125" column="34" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -28,11 +28,41 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Ingredients/IngredientsAdd.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="72" column="15" lean-forward="true" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pizza/PizzasList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pizza/pizza.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Table/Table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-40">
-              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="1136">
+              <caret line="102" column="73" selection-start-line="102" selection-start-column="73" selection-end-line="102" selection-end-column="73" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -92,8 +122,8 @@
       <find>render</find>
       <find>deleteIngredient</find>
       <find>props.ing</find>
-      <find>loadExactIngredient</find>
       <find>onCheckBox</find>
+      <find>loadExactIngredient</find>
     </findStrings>
     <replaceStrings>
       <replace>pizzas</replace>
@@ -112,21 +142,21 @@
         <option value="$PROJECT_DIR$/src/repository/axios.js" />
         <option value="$PROJECT_DIR$/src/custom-axios/axios.js" />
         <option value="$PROJECT_DIR$/src/likicss.css" />
-        <option value="$PROJECT_DIR$/src/Pizza/pizza.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/Button.js" />
         <option value="$PROJECT_DIR$/src/Button/Button.js" />
         <option value="$PROJECT_DIR$/src/Ingredients/CRUDIngredient.js" />
-        <option value="$PROJECT_DIR$/src/Pizza/PizzasList.js" />
         <option value="$PROJECT_DIR$/src/Pizza/PizzaByIngrList.js" />
         <option value="$PROJECT_DIR$/src/Ingredients/IngredientsAdd.js" />
         <option value="$PROJECT_DIR$/src/Ingredients/IngredientsEdit.js" />
         <option value="$PROJECT_DIR$/src/Pizza/PizzaByIngr.js" />
         <option value="$PROJECT_DIR$/src/Ingredients/IngredientItem.js" />
         <option value="$PROJECT_DIR$/src/repository/axiosPizzaRepository.js" />
-        <option value="$PROJECT_DIR$/src/Table/Table.js" />
         <option value="$PROJECT_DIR$/src/Ingredients/IngredientsList.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/Table/Table.js" />
+        <option value="$PROJECT_DIR$/src/Pizza/PizzasList.js" />
+        <option value="$PROJECT_DIR$/src/Pizza/pizza.js" />
       </list>
     </option>
   </component>
@@ -176,8 +206,8 @@
         <observation name="false" value="19.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="312.0" />
-        <observation name="false" value="19.0" />
+        <observation name="UNDEFINED" value="319.0" />
+        <observation name="false" value="23.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:liftShorterClasses">
@@ -197,7 +227,7 @@
         <observation name="UNDEFINED" value="317.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="331.0" />
+        <observation name="UNDEFINED" value="342.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:middleMatching">
@@ -218,8 +248,8 @@
         <observation name="true" value="2.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="false" value="330.0" />
-        <observation name="true" value="1.0" />
+        <observation name="false" value="340.0" />
+        <observation name="true" value="2.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:nonGeneric">
@@ -239,7 +269,7 @@
         <observation name="UNDEFINED" value="317.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="331.0" />
+        <observation name="UNDEFINED" value="342.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_inResolveScope">
@@ -260,8 +290,8 @@
         <observation name="true" value="1.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="316.0" />
-        <observation name="true" value="15.0" />
+        <observation name="UNDEFINED" value="325.0" />
+        <observation name="true" value="17.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_openedInEditor">
@@ -282,8 +312,8 @@
         <observation name="false" value="1.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="316.0" />
-        <observation name="false" value="15.0" />
+        <observation name="UNDEFINED" value="325.0" />
+        <observation name="false" value="17.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameDirectory">
@@ -304,8 +334,8 @@
         <observation name="false" value="1.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="316.0" />
-        <observation name="false" value="15.0" />
+        <observation name="UNDEFINED" value="325.0" />
+        <observation name="false" value="17.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameLogicalRoot">
@@ -326,8 +356,8 @@
         <observation name="false" value="1.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="316.0" />
-        <observation name="false" value="15.0" />
+        <observation name="UNDEFINED" value="325.0" />
+        <observation name="false" value="17.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sdkOrLibrary">
@@ -348,8 +378,8 @@
         <observation name="false" value="1.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="316.0" />
-        <observation name="false" value="15.0" />
+        <observation name="UNDEFINED" value="325.0" />
+        <observation name="false" value="17.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:templates">
@@ -374,7 +404,7 @@
         <observation name="true" value="3.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="false" value="331.0" />
+        <observation name="false" value="342.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:accessible">
@@ -394,7 +424,7 @@
         <observation name="UNDEFINED" value="317.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="331.0" />
+        <observation name="UNDEFINED" value="342.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:expectedType">
@@ -414,7 +444,7 @@
         <observation name="UNDEFINED" value="317.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="331.0" />
+        <observation name="UNDEFINED" value="342.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:kind">
@@ -434,7 +464,7 @@
         <observation name="UNDEFINED" value="317.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="331.0" />
+        <observation name="UNDEFINED" value="342.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:methodsChains">
@@ -454,7 +484,7 @@
         <observation name="UNDEFINED" value="317.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="331.0" />
+        <observation name="UNDEFINED" value="342.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_javaInheritance">
@@ -475,8 +505,8 @@
         <observation name="null" value="1.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="316.0" />
-        <observation name="null" value="15.0" />
+        <observation name="UNDEFINED" value="325.0" />
+        <observation name="null" value="17.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_referenceList">
@@ -497,8 +527,8 @@
         <observation name="unknown" value="1.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="316.0" />
-        <observation name="unknown" value="15.0" />
+        <observation name="UNDEFINED" value="325.0" />
+        <observation name="unknown" value="17.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:recursion">
@@ -518,7 +548,7 @@
         <observation name="UNDEFINED" value="317.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="331.0" />
+        <observation name="UNDEFINED" value="342.0" />
       </dailyData>
     </factor>
     <factor id="completionFinishedType">
@@ -548,9 +578,9 @@
         <observation name="typedSelect" value="82.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="cancelled" value="723.0" />
-        <observation name="explicitSelect" value="252.0" />
-        <observation name="typedSelect" value="79.0" />
+        <observation name="cancelled" value="763.0" />
+        <observation name="explicitSelect" value="260.0" />
+        <observation name="typedSelect" value="82.0" />
       </dailyData>
     </factor>
     <factor id="completionType">
@@ -570,7 +600,7 @@
         <observation name="BASIC" value="461.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="BASIC" value="462.0" />
+        <observation name="BASIC" value="491.0" />
       </dailyData>
     </factor>
     <factor id="completionUsage">
@@ -590,7 +620,7 @@
         <observation name="count" value="1099.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="count" value="1057.0" />
+        <observation name="count" value="1108.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
@@ -635,9 +665,9 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="312.0" />
+        <observation name="UNDEFINED" value="319.0" />
         <observation name="average" value="0.0" />
-        <observation name="count" value="37.0" />
+        <observation name="count" value="45.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -685,9 +715,9 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="312.0" />
+        <observation name="UNDEFINED" value="319.0" />
         <observation name="average" value="0.0" />
-        <observation name="count" value="37.0" />
+        <observation name="count" value="45.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -710,7 +740,7 @@
         <observation name="UNDEFINED" value="317.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="331.0" />
+        <observation name="UNDEFINED" value="342.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:position">
@@ -750,11 +780,11 @@
         <observation name="variance" value="0.281063" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="average" value="0.266263" />
-        <observation name="count" value="661.0" />
+        <observation name="average" value="0.2694" />
+        <observation name="count" value="683.0" />
         <observation name="max" value="16.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="1.201029" />
+        <observation name="variance" value="1.194343" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prefix">
@@ -794,11 +824,11 @@
         <observation name="variance" value="8364.571689" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="average" value="-1122.927383" />
-        <observation name="count" value="661.0" />
+        <observation name="average" value="-1123.442167" />
+        <observation name="count" value="683.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="-1159.0" />
-        <observation name="variance" value="32591.772468" />
+        <observation name="variance" value="32097.817165" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:priority">
@@ -838,11 +868,11 @@
         <observation name="variance" value="2144.623251" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="average" value="-37.305598" />
-        <observation name="count" value="661.0" />
+        <observation name="average" value="-36.311859" />
+        <observation name="count" value="683.0" />
         <observation name="max" value="20.0" />
         <observation name="min" value="-103.0" />
-        <observation name="variance" value="2127.575401" />
+        <observation name="variance" value="2123.578106" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_explicitlyImported">
@@ -867,9 +897,9 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="316.0" />
+        <observation name="UNDEFINED" value="325.0" />
         <observation name="average" value="0.0" />
-        <observation name="count" value="29.0" />
+        <observation name="count" value="33.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -897,9 +927,9 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="316.0" />
+        <observation name="UNDEFINED" value="325.0" />
         <observation name="average" value="0.0" />
-        <observation name="count" value="29.0" />
+        <observation name="count" value="33.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -927,12 +957,12 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="316.0" />
-        <observation name="average" value="0.137931" />
-        <observation name="count" value="29.0" />
+        <observation name="UNDEFINED" value="325.0" />
+        <observation name="average" value="0.121212" />
+        <observation name="count" value="33.0" />
         <observation name="max" value="2.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="0.175104" />
+        <observation name="variance" value="0.165318" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_samePsiMember">
@@ -957,9 +987,9 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="316.0" />
+        <observation name="UNDEFINED" value="325.0" />
         <observation name="average" value="0.0" />
-        <observation name="count" value="29.0" />
+        <observation name="count" value="33.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -1003,7 +1033,7 @@
       </dailyData>
       <dailyData date="25-12-2019">
         <observation name="average" value="0.0" />
-        <observation name="count" value="661.0" />
+        <observation name="count" value="683.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -1046,11 +1076,11 @@
         <observation name="variance" value="9.538228" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="average" value="6.720121" />
-        <observation name="count" value="661.0" />
+        <observation name="average" value="6.667643" />
+        <observation name="count" value="683.0" />
         <observation name="max" value="25.0" />
         <observation name="min" value="1.0" />
-        <observation name="variance" value="18.463383" />
+        <observation name="variance" value="18.324187" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sameWords">
@@ -1070,7 +1100,7 @@
         <observation name="UNDEFINED" value="317.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="331.0" />
+        <observation name="UNDEFINED" value="342.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:shorter">
@@ -1090,7 +1120,7 @@
         <observation name="UNDEFINED" value="317.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="331.0" />
+        <observation name="UNDEFINED" value="342.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:simple">
@@ -1110,7 +1140,7 @@
         <observation name="UNDEFINED" value="317.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="331.0" />
+        <observation name="UNDEFINED" value="342.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sorter">
@@ -1151,7 +1181,7 @@
       </dailyData>
       <dailyData date="25-12-2019">
         <observation name="average" value="1.0" />
-        <observation name="count" value="661.0" />
+        <observation name="count" value="683.0" />
         <observation name="max" value="1.0" />
         <observation name="min" value="1.0" />
         <observation name="variance" value="0.0" />
@@ -1174,7 +1204,7 @@
         <observation name="UNDEFINED" value="317.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="UNDEFINED" value="331.0" />
+        <observation name="UNDEFINED" value="342.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:stats">
@@ -1214,11 +1244,11 @@
         <observation name="variance" value="18416271.238267" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="average" value="7858.367625" />
-        <observation name="count" value="661.0" />
+        <observation name="average" value="7720.885798" />
+        <observation name="count" value="683.0" />
         <observation name="max" value="10000.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="16100643.845451" />
+        <observation name="variance" value="16491802.189593" />
       </dailyData>
     </factor>
     <factor id="itemPosition">
@@ -1254,11 +1284,11 @@
         <observation name="3" value="1.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="0" value="222.0" />
-        <observation name="1" value="14.0" />
+        <observation name="0" value="228.0" />
+        <observation name="1" value="15.0" />
         <observation name="16" value="1.0" />
         <observation name="2" value="5.0" />
-        <observation name="3" value="3.0" />
+        <observation name="3" value="4.0" />
         <observation name="4" value="3.0" />
         <observation name="5" value="1.0" />
         <observation name="7" value="2.0" />
@@ -1287,8 +1317,8 @@
         <observation name="withMnemonics" value="14.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="total" value="211.0" />
-        <observation name="withMnemonics" value="22.0" />
+        <observation name="total" value="219.0" />
+        <observation name="withMnemonics" value="23.0" />
       </dailyData>
     </factor>
     <factor id="prefixLength">
@@ -1349,13 +1379,13 @@
         <observation name="10" value="1.0" />
         <observation name="11" value="1.0" />
         <observation name="13" value="1.0" />
-        <observation name="2" value="48.0" />
-        <observation name="3" value="78.0" />
-        <observation name="4" value="24.0" />
-        <observation name="5" value="45.0" />
+        <observation name="2" value="49.0" />
+        <observation name="3" value="82.0" />
+        <observation name="4" value="25.0" />
+        <observation name="5" value="46.0" />
         <observation name="6" value="8.0" />
         <observation name="7" value="3.0" />
-        <observation name="8" value="2.0" />
+        <observation name="8" value="3.0" />
       </dailyData>
     </factor>
     <factor id="timeBetweenTyping">
@@ -1380,8 +1410,8 @@
         <observation name="count" value="574.0" />
       </dailyData>
       <dailyData date="25-12-2019">
-        <observation name="average" value="186.478326" />
-        <observation name="count" value="669.0" />
+        <observation name="average" value="187.330014" />
+        <observation name="count" value="703.0" />
       </dailyData>
     </factor>
   </component>
@@ -1438,7 +1468,7 @@
     <property name="SearchEverywhereHistoryKey" value="plugins&#9;ACTION&#9;WelcomeScreen.Plugins" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577302154839" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577306530309" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -1490,12 +1520,12 @@
       <workItem from="1577184204301" duration="13842000" />
       <workItem from="1577223216694" duration="615000" />
       <workItem from="1577226803391" duration="15696000" />
-      <workItem from="1577297097411" duration="4863000" />
+      <workItem from="1577297097411" duration="7870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76100000" />
+    <option name="totallyTimeSpent" value="79107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1640,13 +1670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pizza/pizza.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" lean-forward="true" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Pizza/PizzaByIngr.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1658,22 +1681,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pizza/PizzasList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ingredients/IngredientsAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="33" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1695,16 +1704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Table/Table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ingredients/IngredientsList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1715,12 +1714,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/Table/Table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+        <state relative-caret-position="1136">
+          <caret line="102" column="73" selection-start-line="102" selection-start-column="73" selection-end-line="102" selection-end-column="73" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pizza/PizzasList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pizza/pizza.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="125" column="34" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ingredients/IngredientsAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="72" column="15" lean-forward="true" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>

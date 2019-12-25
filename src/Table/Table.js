@@ -100,7 +100,7 @@ class Table extends Component {
                 <Link to="/add" className="btn btn-outline-secondary">
                     <span><strong>Add new ingredient</strong></span>
                 </Link>
-                <div className="custom-control custom-switch row-cols-md-4">
+                <div className="custom-control custom-switch row col-md-3">
                     <input type="checkbox" className={"custom-control-input"} name="customSwitch1" id="customSwitch1"
                            onClick={this.onCheckBox}/>
                     <label className="custom-control-label" htmlFor="customSwitch1"> ALL / JUST SPICY

@@ -45,18 +45,13 @@ class App extends Component {
     deleteIngredient = (ingredientToDelete) => {
         PizzasService.deleteIngredient(ingredientToDelete.name).then((response) => {
             this.setState((prevState) => {
-                console.log("PREVSTATE");
-                console.log(prevState);
                 // splice(arg1,arg2) arg1=na koj indeks da brise        arg2=kolku el da izbrise
                 // no splice ja vrakja izbrisanata niza
                 const startIndex = prevState.ingredients.findIndex(i => i.name === ingredientToDelete.name);
                 const deletedIngredient = prevState.ingredients.splice(startIndex, 1);
                 const ingredients = prevState.ingredients;
 
-
                 const newIngredientsList = ingredients;
-                console.log("FROM APP.JS");
-                console.log(newIngredientsList);
                 return {ingredients: newIngredientsList}
 
             })
