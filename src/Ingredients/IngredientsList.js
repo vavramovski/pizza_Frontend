@@ -1,11 +1,11 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import PizzasService from "../repository/axiosPizzaRepository";
 
 const getIngredients = (props) => {
 
     const deleteIngr= (ingr) => {
         props.onDelete(ingr);
+        props.funkcija(ingr);
     };
 
 

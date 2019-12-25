@@ -2,43 +2,40 @@ import React, {Component} from 'react';
 import IngredientList from "../Ingredients/IngredientsList";
 import {Link} from "react-router-dom";
 import PizzasService from "../repository/axiosPizzaRepository";
-import $ from 'jquery/dist/jquery';
 
 class Table extends Component {
 
 
     constructor(props) {
         super(props);
+        console.log("Constructor")
+        //let asd = this.props.loadIngrs();
         this.state = {
             ingrs: [],
             spicy: false
         }
+
     }
 
     componentWillMount() {
         PizzasService.fetchIngredients().then((data) => {
+            console.log("component will mount AND FETCH");
+            console.log(data.data.content);
             this.setState({
                 ingrs: data.data.content
             });
         });
-        console.log("COMPONENT WILL MOUNT")
-
-        PizzasService.getSpicyIngredients().then((data) => {
-            console.log("SPICY INGREDIENTS");
-            console.log(data.data);
-        });
     }
 
     onCheckBox = (e) => {
-        //e.preventDefault();
-        console.log($("#customSwitch1").val());
+        console.log("CHECKBOX");
         if (!this.state.spicy) {
             PizzasService.getSpicyIngredients().then((data) => {
                 console.log("SPICY INGREDIENTS");
                 console.log(data.data);
                 this.setState({
                     ingrs: data.data,
-                    spicy:true
+                    spicy: true
                 });
             });
         }
@@ -48,11 +45,27 @@ class Table extends Component {
                 console.log(data.data.content);
                 this.setState({
                     ingrs: data.data.content,
-                    spicy:false
+                    spicy: false
                 });
             });
         }
         this.render()
+    };
+
+    forceUp = (ingredientToDelete) => {
+        this.setState((prevState) => {
+            // splice(arg1,arg2) arg1=na koj indeks da brise        arg2=kolku el da izbrise
+            // no splice ja vrakja izbrisanata niza
+            const startIndex = prevState.ingrs.findIndex(i => i.name === ingredientToDelete.name);
+            const deletedIngredient = prevState.ingrs.splice(startIndex, 1);
+            const ingredients = prevState.ingrs;
+
+            const newIngredientsList = ingredients;
+            console.log("FORCE-UP");
+            console.log(newIngredientsList);
+            return {ingrs: newIngredientsList}
+
+        })
     };
 
 
@@ -78,6 +91,8 @@ class Table extends Component {
                                         ingrDetails={this.props.ingrDetails}
                                         ingredients={this.state.ingrs}
                                         getPizzasByIngredient={this.props.getPizzasByIngredient}
+                                        funkcija={this.forceUp}
+
                         />
                         </tbody>
                     </table>
@@ -86,7 +101,7 @@ class Table extends Component {
                     <span><strong>Add new ingredient</strong></span>
                 </Link>
                 <div className="custom-control custom-switch row-cols-md-4">
-                    <input type="checkbox" className={"custom-control-input"} name="customSwitch1"  id="customSwitch1"
+                    <input type="checkbox" className={"custom-control-input"} name="customSwitch1" id="customSwitch1"
                            onClick={this.onCheckBox}/>
                     <label className="custom-control-label" htmlFor="customSwitch1"> ALL / JUST SPICY
                     </label>

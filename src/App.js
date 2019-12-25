@@ -18,16 +18,6 @@ class App extends Component {
         })
     };
 
-    loadExactIngredient = () => {
-        PizzasService.fetchPizzas().then((resp) => {
-            return resp.data;
-        })
-        console.log(PizzasService.fetchPizzas().then((resp) => {
-            return resp.data;
-        }))
-
-    };
-
     loadIngredients = () => {
         PizzasService.fetchIngredients().then((data) => {
             if (data.data.content.length > 0)
@@ -40,10 +30,23 @@ class App extends Component {
                 })
         })
     };
+    loadIngrs = () => {
+        PizzasService.fetchIngredients().then((data) => {
+            console.log(data.data.content);
+            return data.data.content;
+        })
+    };
+
+    loadExactIngredient = () => {
+        PizzasService.fetchPizzas().then((resp) => {
+            return resp.data;
+        })
+    };
     deleteIngredient = (ingredientToDelete) => {
         PizzasService.deleteIngredient(ingredientToDelete.name).then((response) => {
             this.setState((prevState) => {
-
+                console.log("PREVSTATE");
+                console.log(prevState);
                 // splice(arg1,arg2) arg1=na koj indeks da brise        arg2=kolku el da izbrise
                 // no splice ja vrakja izbrisanata niza
                 const startIndex = prevState.ingredients.findIndex(i => i.name === ingredientToDelete.name);
@@ -52,10 +55,10 @@ class App extends Component {
 
 
                 const newIngredientsList = ingredients;
+                console.log("FROM APP.JS");
+                console.log(newIngredientsList);
+                return {ingredients: newIngredientsList}
 
-                return {
-                    ingredients: newIngredientsList
-                }
             })
         })
     };
@@ -69,7 +72,7 @@ class App extends Component {
                 //or
                 //const terms = prevState.terms.concat(newTerm);
                 return {
-                    "ingredients": newIngredientRef
+                    ingredients: newIngredientRef
                 }
             });
         }));
@@ -105,6 +108,8 @@ class App extends Component {
 
 
     render() {
+        console.log("APPS RENDER");
+        console.log(this.state.ingredients);
         const routing = (
             <Router>
                 <Header/>
@@ -114,7 +119,7 @@ class App extends Component {
 
                     </Route>
                     <Route path={"/ingredients"} exact render={() =>
-                        <Table onPageClick={this.loadIngredients} ingredients={this.state.ingredients}
+                        <Table onPageClick={this.loadIngredients} ingredients={this.loadIngrs}
                                ingrDetails={this.fetchExactIngredient} onDelete={this.deleteIngredient}
                                getPizzasByIngredient={this.getPizzasByIngredient}
                         />
