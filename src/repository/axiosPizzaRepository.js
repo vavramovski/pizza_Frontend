@@ -45,6 +45,14 @@ const PizzasService = {
             }
         });
     },
+    getSpicyIngredients : () => {
+        const data = {
+            spicy:true
+        };
+        return axios.get("/ingredients/spicy?spicy=true", {
+
+        });
+    },
     deleteIngredient: (ingrID) => {
         return axios.delete(`/ingredients/${ingrID}`);
     },

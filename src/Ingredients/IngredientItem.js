@@ -30,6 +30,8 @@ class IngredientItem extends Component {
         })
     }
 
+
+
     render() {
         let spcy = String(this.state.ing.spicy);
         let veg = String(this.state.ing.veggie);

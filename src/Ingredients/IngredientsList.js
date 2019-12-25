@@ -1,17 +1,15 @@
 import React from 'react';
-import styles from '../likicss.css'
 import {Link} from "react-router-dom";
+import PizzasService from "../repository/axiosPizzaRepository";
 
 const getIngredients = (props) => {
 
     const deleteIngr= (ingr) => {
         props.onDelete(ingr);
-    }
+    };
+
+
     const ingredients = props.ingredients.map((ingredient) => {
-        if (ingredient === undefined)
-            return(
-                <h1>NEMA INGREDIENTS</h1>
-            )
 
         return (
             <tr>
@@ -49,8 +47,6 @@ const getIngredients = (props) => {
     // classname="row"
     return (
             ingredients
-
-
     )
 }
 
