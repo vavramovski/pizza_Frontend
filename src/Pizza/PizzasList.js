@@ -1,24 +1,47 @@
 import React from 'react';
 import Pizza from "./pizza";
 import styles from '../likicss.css'
+import IngredientsCompared from "../Ingredients/IngredientsCompared";
+
+
+var picici;
 
 const getPizzas = (props) => {
+    //const history = useHistory();
+
 
     const pizzas = props.pizzas.map((pizza) => {
+        const myhook = (arr) => {
+            picici = arr;
+            funky(picici)
+        };
+
         return (
-            <Pizza pizza={pizza} key={pizza.name}/>
+            <Pizza pizza={pizza} key={pizza.name} pici={myhook}/>
         );
     });
 
-    const handlePageClick = (e) => {
-        props.onPageClick(e.selected)
+    const submitForm = (e) => {
+
     };
 
-    // classname="row"
+    const funky = (arr) => {
+        picici = arr;
+        console.log(picici);
+    };
+
+    /*var checkedVals = $('.liki:checkbox:checked').map(function () {
+        return this.value;
+    }).get();
+    console.log(checkedVals);*/
     return (
-        <div className={styles.newLine}>
-            {pizzas}
-        </div>
+        <form onSubmit={submitForm} action={"compare/"}>
+            <div className={styles.newLine}>
+                {pizzas}
+
+                <button type="submit" id="compare" disabled>Compare</button>
+            </div>
+        </form>
 
     )
 };

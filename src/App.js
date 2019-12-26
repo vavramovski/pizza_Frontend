@@ -8,6 +8,7 @@ import Table from "./Table/Table";
 import IngredientsAdd from "./Ingredients/IngredientsAdd"
 import IngredientItem from "./Ingredients/IngredientItem";
 import IngredientsEdit from "./Ingredients/IngredientsEdit";
+import IngredientsCompared from "./Ingredients/IngredientsCompared";
 
 class App extends Component {
     loadPizzas = () => {
@@ -15,6 +16,12 @@ class App extends Component {
             this.setState({
                 pizzas: data.data
             })
+        })
+    };
+
+    getCompared = (pizza1, pizza2) => {
+        PizzasService.getCompared(pizza1,pizza2).then((resp) => {
+            return resp.data;
         })
     };
 
@@ -102,16 +109,17 @@ class App extends Component {
     }
 
 
+
     render() {
-        console.log("APPS RENDER");
-        console.log(this.state.ingredients);
         const routing = (
             <Router>
                 <Header/>
                 <div className="container">
                     <Route path={"/pizzas"} exact render={() =>
                         <PizzaList onPageClick={this.loadPizzas} pizzas={this.state.pizzas}/>}>
-
+                    </Route>
+                    <Route path={"/compare"} exact render={() =>
+                        <IngredientsCompared loadIngr={this.getCompared} pizzas={this.state.pizzas}/>}>
                     </Route>
                     <Route path={"/ingredients"} exact render={() =>
                         <Table onPageClick={this.loadIngredients} ingredients={this.loadIngrs}

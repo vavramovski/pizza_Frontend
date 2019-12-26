@@ -14,6 +14,9 @@ const PizzasService = {
             }
         });
     },
+    getCompared:(pizza1,pizza2)=>{
+        return axios.get(`pizzas/compare?pizza1=${pizza1}&pizza2=${pizza2}`)
+    },
     fetchExactIngredient: (ingr)=> {
         return axios.get("/pizzas/"+ingr+"/details");
     },
